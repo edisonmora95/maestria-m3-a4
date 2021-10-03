@@ -1,0 +1,27 @@
+.navbar a {
+    font-weight: 600;
+}
+
+
+.post-body > section {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.post-time {
+    text-align: left;
+}
+.post-time > span {
+    color: grey;
+}
+.post-likes {
+    text-align: right;
+}
+.post-likes > button > span > i {
+    margin-right: 5px;
+}
+.post-author > span {
+    font-weight: 600;
+}
+.post-text > p {
+    text-align: justify;
+}
