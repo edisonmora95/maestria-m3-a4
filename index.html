@@ -15,50 +15,42 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <i class="fas fa-bolt"></i>
                     three pics
                 </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Create Post</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
     <main class="container">
-        <section class="row">
-            <article class="col-12 col-sm-6 col-md-4">
-                <main class="card post">
-                    <img src="https://i.pinimg.com/originals/07/d3/45/07d345396d4a96a46a1cacac42001635.jpg" alt="post-img">
-                    <section class="card-body post-body">
-                        <section class="row" id="time-likes-row">
-                            <article class="col-6 post-time">
-                                <span>3 min ago</span>
-                            </article>
-                            <article class="col-6 post-likes">
-                                <button class="btn btn-danger">
-                                    <span><i class="fas fa-heart"></i>10k</span>
-                                </button>
-                            </article>
-                        </section>
-                        <section class="row post-author" id="author-row">
-                            <span>@eric</span>
-                        </section>
-                        <section class="row post-text" id="text-row">
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium unde, recusandae expedita eius quod quas vitae omnis, minus voluptatibus odit maiores sapiente vel porro quibusdam blanditiis dolore nulla aperiam eaque.</p>
-                        </section>
-                        <section class="row" id="comments-row">
-                            <span><i class="far fa-comment-alt"></i> 50 comments</span>
-                        </section>
-                    </section>
-                </main>
-            </article>
+        <section class="row my-3">
+            <input class="form-control" type="text" placeholder="Search">
         </section>
+        <section class="row" id="posts-list"></section>
     </main>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/f783dca6c8.js" crossorigin="anonymous"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
