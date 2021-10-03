@@ -202,10 +202,12 @@ addPostBtn.addEventListener("click", () => {
   const lastPost = posts[posts.length - 1];
   const descriptionElement = document.getElementById("description");
   const description = descriptionElement.value;
+  const imageInputElement = document.getElementById("formFile");
+  const url = URL.createObjectURL(imageInputElement.files[0]);
   const post = {
     id: lastPost.id + 1,
     author: "@edison",
-    img: "https://i.pinimg.com/originals/07/d3/45/07d345396d4a96a46a1cacac42001635.jpg",
+    img: url,
     time: "now",
     likes: 0,
     description,
