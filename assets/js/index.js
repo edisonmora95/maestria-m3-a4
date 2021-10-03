@@ -195,3 +195,23 @@ const createTextRow = (post) => {
 posts.forEach(post => {
   addPost(post);
 });
+
+const modal = new bootstrap.Modal(document.getElementById("post-modal"), {});
+const addPostBtn = document.getElementById("btn-add-post");
+addPostBtn.addEventListener("click", () => {
+  const lastPost = posts[posts.length - 1];
+  const descriptionElement = document.getElementById("description");
+  const description = descriptionElement.value;
+  const post = {
+    id: lastPost.id + 1,
+    author: "@edison",
+    img: "https://i.pinimg.com/originals/07/d3/45/07d345396d4a96a46a1cacac42001635.jpg",
+    time: "now",
+    likes: 0,
+    description,
+    comments: 0,
+  };
+  posts.push(post);
+  addPost(post);
+  modal.hide();
+});
